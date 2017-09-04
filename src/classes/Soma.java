@@ -39,16 +39,13 @@ public class Soma {
      public static int fibonacci(int numero) {
          //if((numero > 0){
         // throw.NumberFormatException(" o numero nao deve ser negativo");
-     if(numero ==0){
+     if(numero ==0 || numero == 1)
          return 1;
      
-     }else if(numero ==1){
-         return 1;
-         
-     }else{
+     
          System.out.println(numero);
          return (fibonacci(numero-1) *fibonacci(numero-2));
-    }
+    
      }
     /* programa principal ou teste*/
     public static void main(String[] args) {
